@@ -56,7 +56,7 @@ ou
 1. acesse pelo github pages: https://devnlucas.github.io/EcoHardGreen-TCC-IOS/
 ---
 
-## 💬 Línguagens e Tecnologias usadas
+## 💬 Linguagens e Tecnologias usadas
 
 - HTML5
 - CSS3
