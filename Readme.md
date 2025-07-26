@@ -53,7 +53,7 @@ O site conta um pouco sobre a nossa **história** e o que o curso pode te propor
 
 ou
 
-1. acesse pelo github pages: 
+1. acesse pelo github pages: https://devnlucas.github.io/EcoHardGreen-TCC-IOS/
 ---
 
 ## 💬 Línguagens e Tecnologias usadas
