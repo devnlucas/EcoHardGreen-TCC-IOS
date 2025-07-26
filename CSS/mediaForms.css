@@ -1,0 +1,127 @@
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets até laptops (entre 768px e 1024px) */
+@media (max-width: 1024px) {
+
+    html,
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    input,
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* Celulares (até 767px) */
+@media (max-width: 767px) {
+
+    html,
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+}
+
+/* Caso a tela quebre ou pese demais (imagens ou recursos lentos) */
+@media (max-width: 480px) {
+
+    html,
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    img:broken,
+    img:not([src]) {
+        display: none;
+        /* Fallback para imagens quebradas */
+    }
+}
+
+@media (max-width: 540px) {
+
+    html,
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    html,
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}

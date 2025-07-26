@@ -1,0 +1,346 @@
+/* === Responsividade geral === */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+
+  /* ================ BOTÃO HAMBURGUER ================ */
+  #hamburger {
+    display: none;
+    /* Será mostrado apenas em mobile */
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  header .wrapper {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-eco {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .curso-container {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .carousel-inner img {
+    max-height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* === Para celulares menores (até 480px) === */
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-inner img {
+    display: none;
+    /* Oculta imagens se carregar no celular e for pesado */
+  }
+
+  .botao-inscreva {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+/* === Previne imagens quebradas com fallback === */
+img:not([src]) {
+  display: none;
+}
+
+img.broken {
+  display: none;
+}
+
+/* ========== Ajustes Responsivos Gerais ========== */
+.wrapper {
+  margin-top: 0;
+  padding: 0 1rem;
+}
+
+/* HEADER */
+header {
+  height: auto;
+  padding: 0.5rem 0;
+}
+
+header .wrapper {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo-eco {
+  height: 80px;
+}
+
+/* NAV */
+nav {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  font-size: 1rem;
+}
+
+#toggle-mode {
+  margin-top: 0.5rem;
+}
+
+/* CURSO-CONTAINER */
+.curso-container {
+  margin: 1rem;
+}
+
+.curso-container h1 {
+  font-size: 1.6rem;
+}
+
+.botao-inscreva {
+  margin-top: 20px;
+}
+
+/* FOOTER */
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1 1 100%;
+  margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+}
+
+/* ========== Media Queries Específicas ========== */
+@media (min-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .footer-section {
+    flex: 1 1 200px;
+  }
+
+  header .wrapper {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo-eco {
+    height: 70px;
+  }
+
+  .curso-container h1 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    font-size: 0.9rem;
+  }
+
+  .botao-voltar {
+    font-size: 0.9rem;
+  }
+
+  .carousel-inner img {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo-eco {
+    height: 60px;
+  }
+
+  .curso-container {
+    padding: 15px;
+  }
+
+  .curso-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .botao-inscreva {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+
+.curso-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .curso-container {
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    /* ocupa quase toda a largura com margem */
+    padding: 15px;
+  }
+
+  .curso-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .botao-inscreva {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .curso-container {
+    padding: 20px;
+  }
+
+  .curso-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .botao-voltar {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ================ RESPONSIVIDADE MOBILE ================ */
+/* ================ RESPONSIVIDADE MOBILE ================ */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Ajustes gerais */
+  body {
+    font-size: 15px;
+  }
+
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  /* Header simplificado */
+  header {
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .logo-eco {
+    height: 70px;
+    margin: 0 auto;
+  }
+
+  /* Botão Início */
+  .botao-voltar {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  /* Conteúdo do curso */
+  .curso-container {
+    padding: 20px;
+    margin: 15px auto;
+  }
+
+  .curso-container h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Carrossel */
+  .carousel {
+    margin: 15px 0;
+  }
+
+  .carousel-item img {
+    max-height: 250px;
+  }
+
+  /* Botão inscreva-se */
+  .botao-inscreva {
+    padding: 10px 15px;
+    margin: 15px auto;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section {
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-container, h4, li, p, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
