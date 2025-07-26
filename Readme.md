@@ -62,7 +62,7 @@ ou
 - CSS3
 - JavaScript
 - BootStrap
-- Desing responsivo
+- Design responsivo
 - Animações e efeito visual simples
 
 ---
